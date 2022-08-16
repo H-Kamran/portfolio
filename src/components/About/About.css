@@ -1,0 +1,84 @@
+.about {
+    height: 100vh;
+    background-color: var(--secondary-color-bg);
+    display: grid;
+    grid-template-rows: 20% 15% 65%;
+}
+
+.about .about-head {
+    grid-row-start: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.about .about-head p {
+    color: var(--primary-color-bg);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.about-content {
+    grid-row-start: 3;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.social-network .network-content {
+    background-color: var(--primary-color-bg);
+    padding: 2.5rem;
+    margin: 1rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.network-content .about-logo {
+    color: var(--secondary-color-bg);
+}
+
+.network-content .network-link {
+    text-decoration: none;
+    color: var(--secondary-color-bg);
+    padding-left: 5px;
+}
+
+.about-content .about-me {
+    color: var(--primary-color-bg);
+    width: 30%;
+    margin-left: 5%;
+}
+
+@media (max-width: 920px) {
+    .about {
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width:740px) {
+    .about {
+        grid-template-rows: 20% 10% 70%;
+    }
+    .about-content {
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .social-network{
+        display: flex;
+    }
+    .social-network .network-content {
+        padding: 1.5rem;
+        margin: 1rem;
+        border-radius: 20px;
+    }
+    .about-content .about-me {
+        width: 60%;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}

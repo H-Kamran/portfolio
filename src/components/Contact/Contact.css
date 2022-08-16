@@ -1,0 +1,206 @@
+.contact {
+    height: 100vh;
+    background-color: var(--primary-color-bg);
+    display: grid;
+    grid-template-rows: 20% 10% 70%;
+}
+
+.contact .contact-head {
+    text-align: center;
+    grid-row-start: 2;
+}
+
+.contact .contact-head p {
+    color: var(--secondary-color-bg);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.contact .contact-content {
+    margin: 0 auto;
+    width: 70%;
+    grid-row-start: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-content .social-media {
+    display: flex;
+    flex-direction: column;
+    color: var(--secondary-color-bg);
+    justify-content: center;
+}
+
+.social-media div {
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.social-media .link {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.contact-content .contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form div {
+    width: 100%;
+}
+
+.contact-form div .contact-input {
+    box-sizing: border-box;
+    width: calc(50% - 20px);
+}
+
+.contact-form .contact-input {
+    box-sizing: border-box;
+    background-color: var(--secondary-color-bg);
+    border-radius: 25px;
+    border: 1px solid var(--secondary-color);
+    padding: 10px 25px;
+    font-size: 16px;
+    color: var(--primary-color-bg);
+    transition: all 0.1s ease;
+    margin: 10px;
+}
+
+.contact-form .contact-input:focus {
+    box-shadow: 0 0 10px var(--secondary-color);
+    outline: none;
+}
+
+.contact-form .contact-button {
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+    border: 1px solid var(--secondary-color);
+    padding: 10px 25px;
+    font-size: 16px;
+    color: var(--primary-color-bg);
+    transition: all 0.05s ease;
+    margin: 10px;
+    box-sizing: border-box;
+    width: 30%;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form textarea::-webkit-scrollbar {
+    width: 20px;
+}
+
+.contact-form textarea::-webkit-scrollbar-track {
+    background-color: var(--primary-color-bg);
+}
+
+.contact-form textarea::-webkit-scrollbar-thumb {
+    background: var(--secondary-color-bg);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contact-form textarea::-webkit-scrollbar-button {
+    display: block;
+    background-color: var(--primary-color-bg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+}
+
+.contact-form textarea::-webkit-scrollbar-button:vertical:start:increment {
+    display: none;
+}
+
+.contact-form textarea::-webkit-scrollbar-button:vertical:start:decrement {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7e/Chevron-up.svg');
+    border-radius: 10px 10px 0 0;
+}
+
+.contact-form textarea::-webkit-scrollbar-button:vertical:end:increment {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ee/Chevron-down.svg');
+    border-radius: 0 0 10px 10px;
+}
+
+.contact-form textarea::-webkit-scrollbar-button:vertical:end:decrement {
+    display: none;
+}
+
+@media (max-width: 1067px) {
+    .contact .contact-content {
+        width: 80%;
+    }
+
+    .contact-form .contact-input {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin: 5px;
+    }
+
+    .contact-form div .contact-input {
+        width: calc(50% - 10px);
+    }
+
+    .contact-form .contact-button {
+        padding: 5px 15px;
+        font-size: 13px;
+        margin: 10px;
+        width: 30%;
+    }
+
+    .contact-content .contact-form {
+        width: 70%;
+    }
+
+    .social-media div {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 920px) {
+    .contact {
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width:740px) {
+    .contact {
+        grid-template-rows: 10% 10% 80%;
+    }
+
+    .contact .contact-content {
+        width: 90%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .contact-content .social-media {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .contact-content .contact-form {
+        width: 90%;
+        margin-top: 30px;
+    }
+    .contact-form div {
+        width: 100%;
+    }
+    .contact-form .contact-input {
+        width: 100%;
+    }
+    .contact-form div .contact-input {
+        width: 100%;
+    }
+    .contact-form .contact-button {
+        padding: 10px 15px;
+        font-size: 14px;
+        width: 40%;
+    }
+}
