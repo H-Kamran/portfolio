@@ -49,12 +49,6 @@ const Contact = () => {
             <div className="contact-content">
                 <div className="social-media">
                     <div>
-                        <FiPhone />
-                        <p>Phone</p>
-                        <p>055 384 51 88</p>
-                        <a className="link" href="tel:994553845188">Call number</a>
-                    </div>
-                    <div>
                         <FaWhatsapp />
                         <p>WhatsApp</p>
                         <p>055 384 51 88</p>

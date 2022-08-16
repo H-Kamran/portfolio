@@ -171,7 +171,7 @@
 
 @media screen and (max-width:740px) {
     .contact {
-        grid-template-rows: 10% 10% 80%;
+        grid-template-rows: 5% 10% 85%;
     }
 
     .contact .contact-content {
@@ -200,7 +200,7 @@
     }
     .contact-form .contact-button {
         padding: 10px 15px;
-        font-size: 14px;
+        font-size: 11px;
         width: 40%;
     }
 }
