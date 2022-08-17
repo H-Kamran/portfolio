@@ -9,7 +9,7 @@ const Home = () => {
             <div className='home-content'>
                 <p>Hi, I'm <span>Kamran Hasanov</span></p>
                 <p>And I'm a <span>Frontend developer</span></p>
-                <a href={cv} target="_blank">
+                <a href={cv} target="_blank" rel="noreferrer">
                     <motion.button whileHover={{ scale: 1.1 }} className="cv-button">
                         Download CV
                     </motion.button>

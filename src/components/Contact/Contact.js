@@ -1,5 +1,5 @@
 import "./Contact.css";
-import { FiPhone, FiMail } from "react-icons/fi";
+import { FiMail } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
 import { motion } from 'framer-motion';
 

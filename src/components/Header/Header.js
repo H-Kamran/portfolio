@@ -80,9 +80,9 @@ const Header = () => {
                     }}><a className={linkClass} href="#contact" onClick={hideMenu}>Contact</a></motion.li>
                 </ul>
             </nav>
-            <img className="menu-btn" src={menuSrc} onClick={() => {
-                setMenuSrc(navDisplay == "" ? close : menu);
-                setNavDisplay(navDisplay == "" ? "display-block" : "");
+            <img className="menu-btn" alt="" src={menuSrc} onClick={() => {
+                setMenuSrc(navDisplay === "" ? close : menu);
+                setNavDisplay(navDisplay === "" ? "display-block" : "");
             }} />
         </header>
     );
