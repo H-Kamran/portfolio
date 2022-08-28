@@ -165,7 +165,19 @@
 
 @media (max-width: 920px) {
     .contact {
-        height: 80vh;
+        /* height: 80vh; */
+        padding: 40px 0;
+        height: unset;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact .contact-head {
+        margin-top: 20px;
+    }
+
+    .contact .contact-content {
+        margin-top: 20px;
     }
 }
 

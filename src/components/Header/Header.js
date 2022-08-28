@@ -17,10 +17,12 @@ const Header = () => {
     const [navDisplay, setNavDisplay] = useState("");
 
     const handleScroll = useCallback(() => {
-        let bool = window.innerWidth > 920
-            ? Math.floor((window.pageYOffset + window.innerHeight * 0.1) / window.innerHeight) % 2 === 0
-            : Math.floor((window.pageYOffset + window.innerHeight * 0.05) / (window.innerHeight * 0.8)) % 2 === 0;
-        if (window.innerWidth > 740) {
+        // let bool = window.innerWidth > 920
+        //     ? Math.floor((window.pageYOffset + window.innerHeight * 0.1) / window.innerHeight) % 2 === 0
+        //     : Math.floor((window.pageYOffset + window.innerHeight * 0.05) / (window.innerHeight * 0.8)) % 2 === 0;
+
+        let bool = Math.floor((window.pageYOffset + window.innerHeight * 0.1) / window.innerHeight) % 2 === 0;
+        if (window.innerWidth > 920) {
             if (bool) {
                 setHeaderClass("");
                 setLogoSrc(logo);
